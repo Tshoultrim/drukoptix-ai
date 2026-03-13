@@ -1,4 +1,4 @@
-import { HashRouter as Router, Routes, Route } from 'react-router-dom'  // Change this line
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
 import Navigation from './components/Navigation'
 import Footer from './components/Footer'
@@ -9,12 +9,8 @@ import PrivacyPolicy from './pages/PrivacyPolicy'
 
 function App() {
   return (
-    // Remove the basename prop - HashRouter doesn't need it
     <Router>
-      {/* Add a subtle overlay to enhance glass effect */}
       <div className="fixed inset-0 bg-black/20 pointer-events-none z-0"></div>
-      
-      {/* Main content */}
       <div className="relative z-10">
         <Header />
         <Navigation />
